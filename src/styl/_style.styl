@@ -1,0 +1,707 @@
+@import "_variable.styl"
+@import "_mixins.styl"
+
+body
+  font-family: Whitney SSm A, sans-serif;
+  $ultraThin()
+
+.main-article
+  &--table
+    margin-bottom: 290px
+
+.content
+  width: 1220px
+  margin: 0 auto
+  position relative
+
+.main-text
+  font-size: 14px
+  color: $text_color
+  letter-spacing: -0.1px
+  line-height: 24px
+  font-weight 400
+
+  &.ind-text
+    font-weight 300
+  a
+    color: $main_color
+    border-bottom  1px solid rgba(63, 136, 197, 0.3)
+    &:hover
+      border-bottom: none
+b
+  font-weight 600
+.main-article
+  padding-top: 32px
+
+.page__wrap
+  background-image: url(images/footer_bg.png), url(images/svg/clouds_bg.svg), linear-gradient(-180deg, #34C4F0 0%, #1C90E2 100%)
+  background-position 50% 100%, 0 250px, 600px 50%
+  background-repeat no-repeat, repeat-x, repeat-x
+  background-size: auto, auto, auto
+
+.main-pic
+  position: relative
+  background-position: center
+  background-size: cover
+  height: 568px
+  padding: 34px 44px 47px 44px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  box-sizing: border-box
+  border-radius: 5px 5px 0 0
+  align-items: flex-start
+  position: relative
+  background-image: url('images/main_pic.png')
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+    background-image: url('images/main_pic@2x.png')
+
+.main-pic__mask
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 568px
+  opacity: 0.63
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0) 3%, rgba(0,0,0,0.7) 100%)
+  z-index: 2
+
+.article-text
+  margin-top: auto
+  z-index: 5
+
+.article-title
+  color: $color_white
+  font-size: 50px
+  line-height: 70px
+  font-weight: 600
+  margin-bottom: 12px
+
+.article-text__item
+  color: $color_white
+  font-size: 22px
+  line-height: 28px
+  font-weight: 200
+  margin-bottom: 36px
+
+.article-author
+  position: relative
+  color: $color_white
+  font-size: 12px
+  line-height: 14px
+  font-weight: 300
+  padding-left: 32px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: -2px
+    width: 20px
+    height: 20px
+    background-image: url(images/icons/author.svg)
+    background-repeat: no-repeat
+
+.breadcrumbs
+  &__wrap
+    display: flex
+    background-color: rgba(255, 255, 255, .9)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10)
+    border-radius: 2px
+    padding: 0 14px
+    z-index: 3
+  &__item
+    font-size: 12px
+    letter-spacing: 0
+    line-height: 42px
+    color: #667780
+    &:first-child
+      &:before
+        display: none
+    &:before
+      content: ''
+      display: inline-block
+      color: #fff
+      width: 6px
+      height: 13px
+      background-image: url(images/svg/arrow.svg)
+      background-position: 0px 5px
+      background-size: 100% auto
+      margin: 0 6px 0 8px
+      background-repeat no-repeat
+
+  &__link
+    color: $main_color
+    letter-spacing: 0
+    line-height: 42px
+    text-decoration underline
+    text-decoration-color: #A3DCF0
+    $ultraThin()
+    &:hover
+      text-decoration none
+
+.text-box
+  padding: 45px 45px 45px 45px
+  background-color: $color_white
+  margin-bottom: 10px
+  &--upper
+    position: relative
+    padding-left: 31px
+
+.under-title
+  color: #4a4a4a
+  font-size: 18px
+  line-height: 30px
+  font-weight: 200
+  margin-bottom: 44px
+
+.upper-text
+  color: #475359
+  font-size: 16px
+  line-height: 32px
+  font-weight: 200
+  margin-bottom: 36px
+  &:last-child
+    margin-bottom: 0
+
+.upper-text__container
+  position: relative
+  padding-left: 44px
+  &:before
+    content: ''
+    position: absolute
+    width: 32px
+    height: 245px
+    left: 0
+    top: 8px
+    background: url('images/left-side.svg') center no-repeat
+    background-size: cover
+
+.block-title
+  font-size: 32px
+  line-height: 40px
+  margin-bottom: 30px
+  color: #103144
+  text-align: center
+  font-weight: 600
+
+.primary-text
+  margin-bottom: 32px
+  font-size: 14px
+  line-height: 26px
+  color: #173144
+  text-align: center
+
+.primary-text--italic
+  font-style: italic
+
+.with-icon
+  position: relative
+  padding-left: 24px
+  font-weight: 600
+  font-style: italic
+  &:before
+    content: ''
+    position: absolute
+    width: 16px
+    height: 16px
+    left: 4px
+    top: 0
+    background: url('images/icons/icon-quality.svg') center no-repeat
+
+.with-icon--price
+  &:before
+    background: url('images/icons/icon-price.svg') center no-repeat
+    background-size: cover
+
+.with-icon--diversity
+  &:before
+    background: url('images/icons/icon-diversity.svg') center no-repeat
+    background-size: cover
+
+.ranking-info__top
+  display: flex
+  flex-direction: row
+  align-items: flex-end
+  margin-bottom: 6px
+
+.ranking-info__title
+  font-size: 26px
+  line-height: 32px
+  font-weight: 600
+  color: #000000
+
+.ranking-info__title-img
+  display: inline-block
+  position: relative
+  margin-right: 12px
+
+.ranking-info__subtitle
+  display: block
+  position: relative
+  font-size: 12px
+  line-height: 13px
+  font-weight: 700
+  color: #475761
+  text-transform: uppercase
+  padding-left: 21px
+  margin-bottom: 16px
+  &:before
+    content: ''
+    position: absolute
+    width: 15px
+    height: 8px
+    left: 0
+    top: 2px
+    background: url(images/svg/airplane-ranking-icon.svg) center no-repeat
+    background-size: cover
+
+.ranking-info__text
+  font-size: 14px
+  line-height: 26px
+  font-weight: 400
+  color: #052433
+  margin-bottom: 16px
+
+.ranking-info__table
+  border-collapse: collapse
+  td
+    padding: 14px 20px
+    border: 1px solid #b8e1ef
+    font-size: 12px
+    line-height: 13px
+    font-weight: 700
+    color: #475761
+    text-transform: uppercase
+
+.data-icon
+  position: relative
+  display: block
+  padding-left: 21px
+  &:before
+    content: ''
+    position: absolute
+    width: 16px
+    height: 16px
+    left: 0
+    top: 0
+    background: url('images/icons/icon-quality.svg') center no-repeat
+    background-size: cover
+
+.data-icon--quality
+  &:before
+    height: 18px
+
+.data-icon--price
+  &:before
+    background: url('images/icons/icon-price.svg') center no-repeat
+    background-size: cover
+
+.data-icon--diversity
+  &:before
+    top: -1px
+    background: url('images/icons/icon-diversity.svg') center no-repeat
+    background-size: cover
+
+.ranking-container
+  display: flex
+  flex-direction: column
+
+.ranking-item
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 45px
+  &:last-child
+    margin-bottom: 0
+
+.ranking-info
+  width: 652px
+
+.ranking-rest
+  width: 432px
+  padding: 16px 16px 32px 16px
+  box-sizing: border-box
+  box-shadow: 0 10px 20px 0 rgba(8,54,77,0.10)
+
+.ranking-rest__img-container
+  position: relative
+  width: 402px
+  height: 140px
+  border-radius: 2px 2px 0 0
+  overflow: hidden
+  margin-bottom: 24px
+  &:before
+    content: ''
+    position: absolute
+    width: 171px
+    height: 24px
+    top: 18px
+    left: 0
+    background: url('images/photo/top-rated.png') center no-repeat
+    background-size: cover
+    z-index: 2
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+      background: url('images/photo/top-rated@2x.png') center no-repeat
+      background-size: cover
+
+.ranking-rest__img
+  position: absolute
+  top: -65%
+  left: 0
+
+.ranking-rest__img--taiwan
+  top: auto
+  bottom: -30%
+
+.ranking-rest__img--hong-kong
+  top: -65%
+
+.ranking-rest__img--singapore
+  top: -15%
+
+.ranking-rest__img--amsterdam
+  top: -30%
+
+.ranking-rest__img--gatwick
+  top: -90%
+
+.ranking-rest__img--sydney
+  top: -30%
+
+.ranking-rest__img--madrid
+  top: -33%
+
+.ranking-rest__img--munich
+  top: -70%
+
+.ranking-rest__img--london
+  top: -35%
+
+.ranking-rest__img--frankfurt
+  top: -45%
+
+.ranking-rest__img--toronto
+  top: -45%
+
+.ranking-rest__img--paris
+  top: -110%
+  left: -10%
+
+.ranking-rest__img--barcelona
+  top: -105%
+
+.ranking-rest__img--rome
+  top: 2%
+
+.ranking-rest__name
+  font-size: 18px
+  line-height: 26px
+  font-weight: 600
+  color: #0a0c0d
+  padding-right: 10px
+
+.ranking-rest__text
+  position: relative
+  font-size: 14px
+  line-height: 22px
+  font-weight: 400
+  color: #052433
+  padding-left: 22px
+  margin-bottom: 2px
+  &:before
+    content: ''
+    position: absolute
+    width: 14px
+    height: 10px
+    top: 7px
+    left: 0
+    background: url('images/icons/icon-food.svg') center no-repeat
+    background-size: cover
+
+.ranking-rest__text--location
+  &:before
+    width: 11px
+    height: 16px
+    top: 3px
+    left: 2px
+    background: url('images/icons/icon-location.svg') center no-repeat
+    background-size: cover
+
+.ranking-rest__text--time
+  margin-bottom: 0
+  &:before
+    width: 13px
+    height: 13px
+    top: 4px
+    left: 2px
+    background: url('images/icons/icon-time.svg') center no-repeat
+    background-size: cover
+
+.ranking-rest__top
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 12px
+
+.rate-block
+  background: linear-gradient(147deg, #40C8F7 0%, #46ADF0 100%)
+  border-radius: 3px
+  font-size: 13px
+  color: #fff
+  letter-spacing: 0
+  font-weight: 600
+  line-height: 26px
+  height: 26px
+  padding: 0 5px 0 22px
+  display: inline-block
+  position: relative
+  vertical-align: text-bottom
+  width: 58px
+  overflow hidden
+  box-sizing border-box
+  &:before
+    content ''
+    background-size: 100% auto
+    display: block
+    background-image: url(images/icons/icon-star-white.svg)
+    position: absolute
+    background-repeat: no-repeat
+    width: 13px
+    height: 18px
+    left: 6px
+    top: 5px
+
+.reg
+  font-weight 600
+  font-size: 8px
+  color: #95A69D
+  letter-spacing: 0
+  line-height: 10px
+  position: relative
+  top: 0
+  &--tbl
+    color: #ffffff
+
+.text-box--methodology
+  .primary-text
+    font-size: 14px
+    line-height: 24px
+
+.methodology-content__item
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+
+.methodology__img
+  position: relative
+  top: 4px
+  margin-left: 7px
+
+.primary-text--methodology
+  width: 1026px
+  text-align: left
+
+.rate-block--methodology
+  position: relative
+  top: 4px
+  margin-left: 11px
+
+.methodology-brands
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  margin-left: 100px
+
+.methodology-brands__img--yelp
+  width: 104px
+  height: 51px
+
+.methodology-brands__img--tripadvisor
+  width: 129px
+  height: 60px
+
+.methodology-brands__img--zagat
+  width: 117px
+  height: 28px
+
+.methodology-brands__img--jdpower
+  width: 158px
+  height: 23px
+
+.methodology-brands__img--the-port
+  width: 210px
+  height: 30px
+  opacity: 0.5
+
+.related
+  background: #FFFFFF
+  border-radius: 5px
+  margin-top: 30px
+  margin-bottom: 200px
+
+.related-head
+  min-height 54px
+  display flex
+  justify-content space-between
+  align-items center
+  background: #F0FAFF
+  box-shadow: 0 1px 0 0 #DCEFF5
+  border-radius: 5px 5px 0 0
+  padding: 0 31px
+
+.related-title
+  font-size: 12px
+  color: #0084C3
+  letter-spacing: 0
+  text-transform uppercase
+  font-weight 600
+  letter-spacing -.1px
+
+.related-list
+  padding: 34px 31px 0px 31px
+  display flex
+  justify-content space-between
+  .col
+    width: 43%
+    padding-right: 5%
+
+.related-item
+  padding-bottom: 30px
+
+.related-item__title
+  font-size: 14px
+  color: #475359
+  letter-spacing: -0.2px
+  line-height: 20px
+  font-weight 600
+  padding-bottom: 12px
+
+.related-item__text
+  padding-bottom: 13px
+  line-height 24px
+  font-size: 14px
+  color: #475359
+  letter-spacing: -0.1px
+  font-weight 300
+
+.related-item__link
+  letter-spacing: -0.2px
+  font-weight 300
+  font-size: 14px
+  line-height 24px
+  color: #0DA4F0
+  border-bottom: 1px solid rgba(13, 164, 240, 0.30)
+  padding-bottom: 2px
+
+  &:after
+    width: 100%
+    display: block
+    content ''
+    margin-bottom: 3px
+
+  &:hover
+    border-bottom-color: rgba(13, 164, 239, 0.0)
+
+.footer-menu__link, .button-main, .button-register, .rate-block
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-smoothing: grayscale
+
+.show_more
+  position: relative
+  width: 440px
+  box-sizing: border-box
+  font-size: 12px
+  line-height: 24px
+  font-weight: 600
+  color: $color_white
+  letter-spacing: 0
+  border-radius: 5px
+  line-height 56px
+  text-transform uppercase
+  display inline-block
+  padding: 0 24px
+  cursor: pointer
+  margin-top: 32px
+  background-color: $color_white
+  background-image: linear-gradient(0deg, #4C4AD4 2%, #7A79D4 100%)
+  border: 1px solid rgba(255,255,255,1)
+  transition: all .5s
+  &:after
+    content: ''
+    position: absolute
+    right: 36px
+    top: 18px
+    width: 20px
+    height: 20px
+    background-image: url(images/svg/button_icon.svg)
+    background-repeat: no-repeat
+  &:hover
+    color: #5654D7
+    background-color: $color_white
+    background-image: none
+    border: 1px solid #5654D7
+    transition: all .5s ease
+    &:after
+      background-image: url(images/svg/button_icon-hover.svg)
+
+.show_more--comparison
+  margin-top: 120px
+
+.overflow-table
+  padding-top: 22px
+  border-radius: 5px
+  .primary-text
+    margin-bottom: 32px
+
+  .breadcrumbs
+    &__wrap
+      display: flex
+      background-color: $color_white
+      border-radius: 2px
+      padding: 0
+      margin-bottom: 44px
+      box-shadow: none
+    &__item
+      font-size: 12px
+      letter-spacing: 0
+      line-height: 42px
+      color: #475359
+      &:first-child
+        &:before
+          display: none
+      &:before
+        content: ''
+        display: inline-block
+        color: #fff
+        width: 6px
+        height: 13px
+        background-image: url(images/svg/arrow.svg)
+        background-position: 0px 5px
+        background-size: 100% auto
+        margin: 0 6px 0 8px
+        background-repeat no-repeat
+
+    &__link
+      color: #0683BD
+      letter-spacing: 0
+      line-height: 42px
+      text-decoration: none
+      $ultraThin()
+      &:hover
+        text-decoration: underline
+
+  .block-title
+    font-size: 32px
+    line-height: 40px
+    font-weight: 600
+
+  .mobile-only-close
+    display: none
+
+  .mobile-only-show
+    display: none
+

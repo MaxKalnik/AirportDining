@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="32px" viewBox="0 0 70 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Top&amp;Rank</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#6BDA24" offset="0%"></stop>
+            <stop stop-color="#37B20E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Airport_Dining_Scorecard_1440" transform="translate(-155.000000, -1230.000000)">
+            <g id="Rankings-from-Best-to-Worst" transform="translate(153.000000, 1061.000000)">
+                <g id="1-Tokyo" transform="translate(2.000000, 169.000000)">
+                    <g id="Airport/Ranking/Titile">
+                        <g id="Titile">
+                            <g id="Top&amp;Rank">
+                                <g id="Rank-2">
+                                    <path d="M24.9726968,3 L66.9905349,3 C68.6526166,3 70,4.34312337 70,6.00793008 L70,25.9920699 C70,27.6533038 68.6558911,29 66.9905349,29 L24.9726968,29 C22.3834109,30.8880809 19.2070518,32 15.7746479,32 C7.06255043,32 0,24.836556 0,16 C0,7.163444 7.06255043,0 15.7746479,0 C19.2070518,0 22.3834109,1.11191914 24.9726968,3 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                                    <ellipse id="Path" stroke="#FFFFFF" cx="15.7746479" cy="16" rx="11.8309859" ry="12"></ellipse>
+                                    <text id="5.0" font-family="WhitneyHTF-SemiBold, Whitney HTF" font-size="14" font-weight="500" fill="#FFFFFF">
+                                        <tspan x="35.6338028" y="21">4.77</tspan>
+                                    </text>
+                                    <text id="1" font-family="WhitneyHTF-Bold, Whitney HTF" font-size="16" font-weight="bold" fill="#FFFFFF">
+                                        <tspan x="12.5186479" y="21">1</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

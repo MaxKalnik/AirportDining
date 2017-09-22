@@ -1,0 +1,103 @@
+@import "_variable.styl"
+
+.table
+	position: relative
+	width: 650px
+	background: linear-gradient(to right, #4D4BD4 0%, #7A79D4 100%)
+	padding-top: 65px
+	padding-left: 2px
+	padding-right: 2px
+	padding-bottom: 2px
+	border-radius: 5px
+	box-shadow: -1px 37px 43px -40px rgba(20, 105, 161, 0.5)
+	&:before
+		content: ''
+		position: absolute
+		top: 12px
+		left: 16px
+		width: 70px
+		height: 54px
+		background-image: url(images/icons/icon_salut.svg)
+		background-repeat: no-repeat
+	&__head
+		position: absolute
+		top: 23px
+		left: 110px
+		font-size: 14px
+		font-weight: bold
+		color: $color_white
+		text-transform: uppercase
+		text-align: center
+
+.full-table
+	width: 100%
+	min-width: 600px
+	border-collapse: collapse
+	background: linear-gradient(to right, #209CED 0%, #40C8F7 100%) center no-repeat
+	border-radius: 5px
+	thead
+		th
+			padding: 16px 20px
+			font-size: 12px
+			line-height: 16px
+			color: $color_white
+			text-align: left
+			text-transform: uppercase
+			border-right: 1px solid rgba(255,255,255,0.2)
+			&:first-child
+				text-align: center
+
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6)
+				text-align: center
+
+			&:nth-child(7)
+				text-align: center
+
+			&:last-child
+				border-right: none
+
+	tbody
+		tr
+			background-color: #ffffff
+
+		td
+			padding: 16px 20px
+			border-top: 1px solid #F2FBFE
+			border-bottom: 1px solid #E6EEF2
+			font-size: 14px
+			line-height: 16px
+			&:first-child
+				text-align: center
+				font-size: 12px
+				line-height: 14px
+				font-weight: 600
+				color: #859BA6
+
+			&:nth-child(2)
+				width: 17%
+				font-weight: 600
+				color: #1C3144
+
+			&:nth-child(3)
+				font-size: 14px
+				line-height: 16px
+
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6)
+				font-weight: 600
+				color: #0a0c0d
+				font-size: 14px
+				line-height: 16px
+				text-align: center
+
+			&:nth-child(7)
+				width: 12%
+				text-align: center
+
+	.rate-block
+		background: linear-gradient(147deg, #40C8F7 0%, #46ADF0 100%)
+		&:before
+			top: 5px
