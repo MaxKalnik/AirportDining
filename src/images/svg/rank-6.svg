@@ -22,7 +22,7 @@
                                     <text id="5.0" font-family="WhitneyHTF-SemiBold, Whitney HTF" font-size="14" font-weight="500" fill="#FFFFFF">
                                         <tspan x="36" y="21">3.88</tspan>
                                     </text>
-                                    <text id="1" font-family="WhitneyHTF-Bold, Whitney HTF" font-size="16" font-weight="bold" fill="#FFFFFF">
+                                    <text id="1" font-family="WhitneyHTF-SemiBold, Whitney HTF" font-size="16" font-weight="semibold" fill="#FFFFFF">
                                         <tspan x="11.384" y="21">6</tspan>
                                     </text>
                                 </g>

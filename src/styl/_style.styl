@@ -262,16 +262,24 @@ b
   color: #052433
   margin-bottom: 16px
 
+.ranking-info__table-cont
+  display: inline-block
+  border: 1px solid #b8e1ef
+  border-radius: 3px
+
 .ranking-info__table
   border-collapse: collapse
   td
     padding: 14px 20px
-    border: 1px solid #b8e1ef
     font-size: 12px
     line-height: 13px
     font-weight: 700
+    border-right: 1px solid #b8e1ef
     color: #475761
     text-transform: uppercase
+
+    &:last-child
+      border-right: none
 
 .data-icon
   position: relative
@@ -322,12 +330,13 @@ b
   padding: 16px 16px 32px 16px
   box-sizing: border-box
   box-shadow: 0 10px 20px 0 rgba(8,54,77,0.10)
+  border-radius: 3px
 
 .ranking-rest__img-container
   position: relative
   width: 402px
   height: 140px
-  border-radius: 2px 2px 0 0
+  border-radius: 5px 5px 0 0
   overflow: hidden
   margin-bottom: 24px
   &:before

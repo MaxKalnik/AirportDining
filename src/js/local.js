@@ -1,6 +1,3 @@
-/**
- * Created by sergeybytchok on 2/24/17.
- */
 $(document).ready(function () {
     var body = $('body');
 
